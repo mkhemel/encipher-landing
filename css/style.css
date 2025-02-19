@@ -7,10 +7,8 @@
 }
 
 body{
-    font-family: "Archivo", serif;
+    font-family: "Urbanist", serif;
     font-style: normal;
-    background: #0E0E0E;
-    color: #ffffff;
     line-height: 1.5;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -58,7 +56,7 @@ html, body{
 
 /* Path: css/variables.css */
 :root{
-    --primary-color: #0084CC;
+    --primary-color: #0A8741;
     --secondary-color: #a1d2ee;
     --tertiary-color: #f3f3f3;
     --dark-color: #333;
@@ -74,6 +72,38 @@ html, body{
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.cs-sticky-header {
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+}
+
+.cs-site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 101;
+    left: 0;
+    top: 50px;
+    transition: all .4s ease;
+}
+
+.cs-gescout-sticky{
+    position: fixed !important;
+    top: -110px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    background-color: #ffffff;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .06);
+}
+
+.cs-gescout-show {
+    top: 0 !important;
+    opacity: 1;
+    visibility: visible;
+    background-color: #ffffff;
 }
 
 .navbar-toggler-icon{
@@ -100,12 +130,13 @@ html, body{
 
 .home-header{
     padding: 1rem 0;
-    height: 100%;
     position: relative;
-    background-color: #0E0E0E;
     overflow: hidden;
 }
 
+.home-content-wrapper{
+    max-width: 1820px;
+}
 
 
 /*.home-header:after{*/
@@ -161,8 +192,7 @@ html, body{
 }
 
 .navbar-cs .navbar-brand img{
-    height: 115px;
-    width: 124px;
+    width: 220px;
 
 }
 
@@ -171,10 +201,9 @@ html, body{
 }
 
 .navbar-cs .nav-item .nav-link{
-    font-family: "Archivo", serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
+    font-family: "Urbanist", serif;
+    font-size: 16px;
+    font-weight: 600;
     margin-left: 40px;
     position: relative;
     padding: 0;
@@ -184,18 +213,31 @@ html, body{
 .navbar-cs .nav-item .nav-link::after{
     content: "";
     position: absolute;
-    width: 100%;
-    height: 0px;
-    background-color: #fff;
-    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
     left: 0;
+    bottom: 2px;
     transition: 0.3s ease-in-out;
+}
+
+.navbar-cs .nav-item .nav-link:hover{
+    color: var(--primary-color);
 }
 
 .navbar-cs .nav-item .nav-link:hover::after{
     width: 100%;
     height: 2px;
-    bottom: 2px;
+
+}
+
+.demo-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 600;
 }
 
 /* Path: Home.css */
@@ -207,17 +249,117 @@ html, body{
 }
 
 .home-container-outer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
+
 }
 
 .home-content-wrapper{
     display: flex;
     justify-content: center;
-    padding: 2rem 1rem;
+    position: relative;
+    border-radius: 50px;
+    background: rgba(116, 68, 253, .06);
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.home-content-wrapper .shape1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.home-content-wrapper .shape2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.home-content-wrapper .shape3{
+    position: absolute;
+    top: 110px;
+    left: 34px;
+    z-index: 1;
+}
+
+.home-content-wrapper .shape4 {
+    position: absolute;
+    bottom: 111px;
+    right: 22px;
+    z-index: 1;
+}
+
+.home-content-wrapper .shape5 {
+    position: absolute;
+    bottom: 162px;
+    right: 874px;
+    z-index: 1;
+}
+
+.cir36 {
+    animation: cir36 20s linear infinite;
+    -webkit-animation: cir36 20s linear infinite
+}
+
+@keyframes cir36 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+
+.home-content-wrapper .shape1 img,
+.home-content-wrapper .shape2 img{
+    height: 100%;
+}
+
+.header-info {
+    position: relative;
+    padding: 223px 0 180px;
+    z-index: 5;
+    max-width: 720px;
+}
+
+.header-thumb {
+    position: relative;
+    padding: 223px 0 0;
+    z-index: 3;
+}
+
+.header-thumb .thumbShape1 {
+    position: absolute;
+    top: 260px;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.header-thumb .thumbShape1 img,
+.header-thumb .thumbShape2 img {
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+.header-thumb .thumbShape2 {
+    position: absolute;
+    top: 328px;
+    right: 30px;
+    z-index: 2;
+    width: calc(100% - 60px);
+}
+
+.header-thumb .main-thumb {
+    position: relative;
+    z-index: 3;
+    aspect-ratio: 507/709;
+    max-height: 709px;
 }
 
 
@@ -269,30 +411,58 @@ html, body{
 }
 
 .nav-container{
-    background-color: rgba(255, 255, 255, 0.08);
     position: relative;
 
 }
 
 .home-header-title{
-    font-size: 75px;
+    color: #282c32;
+    font-family: Urbanist, sans-serif;
+    font-size: 64px;
+    font-style: normal;
     font-weight: 700;
     line-height: 80px;
-    letter-spacing: 0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-    max-width: 1554px;
-    text-transform: uppercase;
+    letter-spacing: -1.28px;
+    margin-bottom: 15px;
 }
+.header-info .intro-subtitle {
+    display: inline-flex;
+    padding: 5px 7px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: rgba(10, 135, 65, 0.15);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    color: var(--primary-color);
+    font-family: Urbanist, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -.32px;
+    margin-bottom: 20px;
+}
+
+.header-info .intro-subtitle span {
+    display: inline-block;
+    padding: 5px 15px;
+    gap: 10px;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #282c32;
+    font-family: Urbanist, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -.32px;
+}
+
 
 .home-header-desc{
     font-size: 36px;
     font-weight: 400;
-    color: #fff;
-    text-align: center;
     margin-top: 30px;
     max-width: 900px;
     margin-left: auto;
