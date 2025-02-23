@@ -204,15 +204,15 @@
                     </div>
                     <div class="col-xl-6 order-1 order-xl-2">
                         <div class="about-thumb-wrap">
-                            <div class="thumb1 img-custom-anim-top wow fadeInDown" data-wow-delay=".8s" data-tilt="true"
+                            <div class="thumb1 about-thumb-1 wow" data-wow-delay=".8s" data-tilt="true"
                                  data-tilt-max="10">
                                 <img alt="img" loading="lazy"
                                      src="./assets/image/aboutThumb-1.png" style="color: transparent;"></div>
-                            <div class="thumb2 img-custom-anim-bottom wow fadeInBottom" data-wow-delay=".4s"
+                            <div class="thumb2 about-thumb-2 wow" data-wow-delay=".4s"
                                  data-tilt="true" data-tilt-max="15">
                                 <img alt="img" loading="lazy" src="./assets/image/aboutThumb-2.png"
                                      style="color: transparent;"></div>
-                            <div class="shape1">
+                            <div class="shape1 about-thumb-circle">
                                 <img alt="img" loading="lazy" src="./assets/image/circle-2.png"
                                      style="color: transparent;"></div>
                         </div>
@@ -268,8 +268,8 @@
             </div>
             <div class="col-xl-4 d-flex justify-content-center">
                 <div class="wcu-thumb-wrap">
-                    <div class="wcu-thumb wow fadeInUp" data-wow-delay=".2s">
-                        <div class="main-thumb wow bounceInUp" data-wow-delay=".6s">
+                    <div class="wcu-thumb  wow " data-wow-delay=".2s">
+                        <div class="main-thumb wow" data-wow-delay=".6s">
                             <img alt="img" loading="lazy" src="./assets/image/wcuThumb1_1.png">
                         </div>
                         <div class="shape">
@@ -322,7 +322,7 @@
         <p class="section-desc text-center mx-auto" style="max-width: 780px">Encipher isn’t just another messaging
             app—it’s a privacy fortress. With military-grade encryption, offline capability, and total data control,
             <strong>your communication remains secure, even in the most vulnerable environments.</strong></p>
-        <div class="row">
+        <div class="row feature-wrap">
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="feature-provide-box-outer">
                     <div class="feature-provide-box-items style-2">
@@ -525,7 +525,7 @@
                                     </svg>
                                 </div>
                                 <div class="title">Our Address</div>
-                                <a class="text" href="#">2464 Royal Ln. Mesa, New Jersey 45463.</a></div>
+                                <a class="text" href="#"> Flat 14E, Confidence Center(2nd Building), Shahjadpur, Gulshan, Dhaka</a></div>
                         </div>
                     </div>
                     <div class="">
@@ -553,8 +553,8 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <h3 class="title"><a href="mailto:info@exmple.com"> info@exmple.com </a></h3>
-                                <p class="text">Email us anytime for anykind ofquety.</p></div>
+                                <h3 class="title"><a href="mailto:biz@parallaxlogic.com"> biz@parallaxlogic.com </a></h3>
+                                <p class="text">Email us anytime for any kind of quety.</p></div>
                         </div>
                     </div>
                     <div class="">
@@ -569,8 +569,8 @@
                                               fill="#0A8741FF"></path>
                                     </svg>
                                 </div>
-                                <h3 class="title"><a href="tel:34534534543"> Hot: +208-666-0112 </a></h3>
-                                <p class="text">Call us any kind suppor,we will wait for it</p></div>
+                                <h3 class="title"><a href="tel:+88 01711 081836"> Hot: +88 01711 081836 </a></h3>
+                                <p class="text">Call us any kind support,we will wait for it</p></div>
                         </div>
                     </div>
             </div>
@@ -661,126 +661,38 @@
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
     });
 </script>
-<!--<script>-->
-<!--    document.addEventListener("DOMContentLoaded", function () {-->
-<!--        var target = document.querySelector('.why-choose');-->
-<!--        var target2 = document.querySelector('.welcome-card-desc-1');-->
-<!--        var target3 = document.querySelector('.why-us-grid-wrapper');-->
-<!--        var target4 = document.querySelector('.platform-1');-->
-<!--        var target5 = document.querySelector('.platform-2');-->
-<!--        var target6 = document.querySelector('.platform-3');-->
-<!--        var observer = new IntersectionObserver(function (entries) {-->
-<!--            console.log(entries);-->
-<!--            // If the target is in view, add the fadeInRight class-->
-<!--            if (entries[0].isIntersecting) {-->
-<!--                target.classList.add('pulse');-->
-<!--                target2.classList.add('pulse');-->
-<!--                target3.classList.add('fadeInUp');-->
-<!--                if (entries[0].target === target4) {-->
-<!--                    target4.classList.add('fadeInTop');-->
-<!--                    target5.classList.add('fadeInBottom');-->
-<!--                    target6.classList.add('fadeInTop');-->
-<!--                }-->
-<!--            }-->
-<!--        }, {threshold: [0.1]});-->
-
-<!--        // Start observing the target-->
-<!--        observer.observe(target);-->
-<!--        observer.observe(target2);-->
-<!--        observer.observe(target3);-->
-<!--        observer.observe(target4);-->
-<!--        observer.observe(target5);-->
-<!--        observer.observe(target6);-->
-<!--    });-->
-<!--</script>-->
-
 <script>
-    // var swiperThumbs = new Swiper(".mySwiper", {
-    //     spaceBetween: 10,
-    //     slidesPerView: 3, // Show only 3 thumbnails at a time
-    //     direction: "vertical",
-    //     freeMode: true,
-    //     watchSlidesProgress: true,
-    //     navigation: {
-    //         nextEl: ".swiper-button-next-thumbs",
-    //         prevEl: ".swiper-button-prev-thumbs",
-    //     },
-    // });
-    //
-    // var swiperMain = new Swiper(".mySwiper2", {
-    //     spaceBetween: 10,
-    //     navigation: {
-    //         // nextEl: ".swiper-button-next",
-    //         // prevEl: ".swiper-button-prev",
-    //     },
-    //     thumbs: {
-    //         swiper: swiperThumbs,
-    //     },
-    // });
-    function initSwipers() {
-        var swiperThumbs = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            slidesPerView: window.innerWidth > 576 ? 3 : 2, // Show only 3 thumbnails at a time
-            direction: window.innerWidth > 992 ? "vertical" : "horizontal", // Change direction based on screen width
-            freeMode: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".swiper-button-next-thumbs",
-                prevEl: ".swiper-button-prev-thumbs",
-            },
-        });
-
-        var swiperMain = new Swiper(".mySwiper2", {
-            spaceBetween: 10,
-            thumbs: {
-                swiper: swiperThumbs,
-            },
-        });
-
-        // Update Swiper on window resize
-        window.addEventListener("resize", function () {
-            swiperThumbs.changeDirection(window.innerWidth > 992 ? "vertical" : "horizontal");
-        });
-    }
-
-    // Initialize Swipers when the page loads
-    initSwipers();
-
-</script>
-
-<script>
-    function updateThumbsHeight() {
-        if (window.innerWidth > 992) { // Only apply height above 992px
-            const mainSwipper = document.querySelector('.mySwiper2 .swiper-slide-active');
-            let divHeight;
-
-            if (mainSwipper) {
-                const innerDiv = mainSwipper.querySelector('div');
-                if (innerDiv) {
-                    divHeight = `${innerDiv.clientHeight}px`;
+    document.addEventListener("DOMContentLoaded", function () {
+        var target = document.querySelector('.about-thumb-1');
+        var target2 = document.querySelector('.about-thumb-2');
+        var target3 = document.querySelector('.about-thumb-circle');
+        var target4 = document.querySelector('.wcu-thumb');
+        var target5 = document.querySelector('.main-thumb');
+        var target6 = document.querySelector('.feature-wrap');
+        var observer = new IntersectionObserver(function (entries) {
+            // If the target is in view, add the fadeInRight class
+            if (entries[0].isIntersecting) {
+                target.classList.add('img-custom-anim-top');
+                target2.classList.add('img-custom-anim-bottom');
+                target3.classList.add('img-custom-anim-bottom');
+                if (entries[0].target === target4) {
+                    target4.classList.add('fadeInUp');
+                    target5.classList.add('bounceInUp');
+                    target6.classList.add('fadeInUp');
                 }
             }
+        }, {threshold: [0.1]});
 
-            const thumbsSwipper = document.querySelector('.mySwiper');
-            if (mainSwipper && thumbsSwipper && divHeight) {
-                thumbsSwipper.style.height = divHeight;
-            }
-        } else {
-            // Reset height below 992px
-            const thumbsSwipper = document.querySelector('.mySwiper');
-            if (thumbsSwipper) {
-                thumbsSwipper.style.height = 'auto';
-            }
-        }
-    }
-
-    // Run function on page load
-    window.onload = updateThumbsHeight;
-
-    // Run function on resize to update height dynamically
-    window.addEventListener('resize', updateThumbsHeight);
-
+        // Start observing the target
+        observer.observe(target);
+        observer.observe(target2);
+        observer.observe(target3);
+        observer.observe(target4);
+        observer.observe(target5);
+        observer.observe(target6);
+    });
 </script>
+
 
 
 
