@@ -6,9 +6,6 @@
 }
 
 @media (max-width: 1399.98px) {
-    .home-content-wrapper{
-        margin-top: 0px;
-    }
 
     .home-content-logo{
         width: 130px;
@@ -157,6 +154,10 @@
         font-size: 32px;
     }
 
+    .feature-provide-box-items.style-2{
+        margin-top: 0;
+    }
+
 
 
 }
@@ -164,7 +165,7 @@
 @media (max-width: 991.98px) {
 
     .navbar.navbar-cs:not(.fixed-nav) .navbar-collapse{
-        background-color: #FFFFFF3D;
+        background-color: rgba(255, 255, 255, 0.6);
     }
 
     .navbar-collapse .navbar-nav li{
@@ -181,14 +182,18 @@
     }
 
     .navbar-cs .nav-item .nav-link{
-        font-weight: 500 !important;
-        font-size: 13px;
-        line-height: 17.55px;
+        font-weight: 600 !important;
+        font-size: 16px;
         padding-top: 5px;
         padding-bottom: 5px;
-        justify-content: end;
+        justify-content: center;
         display: flex;
-        padding-right: 30px;
+    }
+
+    .problem-list li{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
     }
 
     .navbar-cs .nav-item .nav-link span{
@@ -206,11 +211,11 @@
     }
 
     .container-fluid.nav-container .navbar-cs > .container-fluid .navbar-brand{
-        margin-left: .75rem;
+        margin-left: 2.5rem;
     }
 
     .container-fluid.nav-container .navbar-cs > .container-fluid .navbar-toggler{
-        margin-right: .75rem;
+        margin-right: 2.5rem;
     }
 
     .navbar-toggler:focus {
@@ -327,8 +332,11 @@
 
 
     .navbar-cs .navbar-brand img{
-        height: 45px;
-        width: 48.52px;
+        width: 165px;
+    }
+
+    .cs-site-header{
+        top: 35px;
     }
 
     .nav-container{
@@ -531,39 +539,15 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .home-content-wrapper{
-        margin-top: 0px;
-    }
-
-    .mySwiper .swiper-wrapper.swiper-wrapper-cs{
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-
-    .swiper-button-next.swiper-button-next-thumbs,
-    .swiper-button-prev.swiper-button-prev-thumbs{
-        display: none;
-    }
-
-    .form-control-cs-email{
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-    }
-
-    .contact-btn.contact-btn-2{
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    .complex-sub-title{
+    .fancy-box h4,
+    .feature-provide-box-items .content h3{
         font-size: 20px;
-        font-weight: 500;
-        line-height: 22px;
-        color: #ffffff;
+        line-height: 25px;
     }
 
+    .fancy-box.style2 .d-flex.justify-content-start{
+        margin-bottom: 5px;
+    }
     .read-more-text.hide{
         display: none;
     }
@@ -590,14 +574,38 @@
         border-radius: 20px 20px 0 0;
     }
 
+    .header-thumb{
+        padding: 110px 0 0;
+    }
+
+    .header-thumb .thumbShape1 {
+        top: 150px;
+    }
+
+    .header-thumb .thumbShape2{
+        top: 200px;
+    }
+
+    .header-info{
+        padding: 20px 0;
+    }
+
     .welcome-card{
         padding: 20px;
         border-radius: 20px;
     }
     .navbar-cs .navbar-brand img{
-        height: 45px;
-        width: 48.52px;
+        width: 150px;
     }
+
+    .container-fluid.nav-container .navbar-cs > .container-fluid .navbar-brand{
+        margin-left: 2rem;
+    }
+
+    .container-fluid.nav-container .navbar-cs > .container-fluid .navbar-toggler{
+        margin-right: 2rem;
+    }
+
     .section{
         padding: 40px 0;
     }
