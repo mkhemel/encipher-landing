@@ -788,11 +788,11 @@
         })
             .then(response => response.json())
             .then(data => {
-                showResponseMessage(data.message, 'alert-success');
+                // showResponseMessage(data.message, 'alert-success');
                 this.reset();
             })
             .catch((error) => {
-                showResponseMessage(error.message, 'alert-danger');
+                // showResponseMessage(error.message, 'alert-danger');
 
             });
     });
