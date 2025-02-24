@@ -707,6 +707,10 @@
         font-size: 20px;
     }
 
+    .home-content-wrapper{
+        border-radius: 25px;
+    }
+
     .contact-subtitle{
         font-size: 24px;
         margin-bottom: 30px;
