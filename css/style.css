@@ -908,6 +908,10 @@ label.form-label{
     font-weight: 400;
 }
 
+.iti.iti--allow-dropdown.iti--separate-dial-code{
+    width: 100%;
+}
+
 
 .contact-info-box.style1,
 .contact-info-box.style1 .contact-content {
@@ -989,7 +993,7 @@ label.form-label{
   }
 
 .modal-content{
-    background-color: rgba(14, 14, 14, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .modal-header{
@@ -1015,7 +1019,7 @@ label.form-label{
 .modal-form-title{
     font-size: 32px;
     font-weight: 600;
-    color: #fff;
+    color: #282c32;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -1451,4 +1455,22 @@ label.form-label{
 
 .language-dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+    background: var(--primary-color);
+    box-shadow: var(--primary-color) 0 1px 3px 0 inset;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
+    background: rgba(10, 135, 65, 0.8) !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today{
+    color: var(--primary-color);
+}
+
+.xdsoft_current.xdsoft_today{
+    color: #FFFFFF !important;
 }
